@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="University@localhost">
-  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.2">
+  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.16">
     <root id="1"/>
     <database id="2" parent="1" name="University">
       <ObjectId>57549</ObjectId>
       <Current>1</Current>
-      <Visible>1</Visible>
     </database>
     <schema id="3" parent="2" name="public">
       <ObjectId>2200</ObjectId>
       <IntrospectionTimestamp>2019-10-28.20:16:01.014</IntrospectionTimestamp>
       <IntrospectionStateNumber>4626</IntrospectionStateNumber>
       <Current>1</Current>
-      <Visible>1</Visible>
     </schema>
     <schema id="4" parent="2" name="pg_catalog">
       <ObjectId>11</ObjectId>
@@ -39,13 +37,13 @@
     </table>
     <column id="11" parent="9" name="group_num">
       <Position>1</Position>
-      <DataType>integer|0</DataType>
+      <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>4626</StateNumber>
     </column>
     <column id="12" parent="9" name="faculty">
       <Position>2</Position>
-      <DataType>varchar(50)|0</DataType>
+      <DataType>varchar(50)|0s</DataType>
       <StateNumber>4626</StateNumber>
     </column>
     <index id="13" parent="9" name="_group_pkey">
@@ -56,35 +54,35 @@
     <key id="14" parent="9" name="_group_pkey">
       <ObjectId>57574</ObjectId>
       <ColNames>group_num</ColNames>
-      <UnderlyingIndexName>_group_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
+      <UnderlyingIndexName>_group_pkey</UnderlyingIndexName>
     </key>
     <column id="15" parent="10" name="name">
       <Position>1</Position>
-      <DataType>varchar(20)|0</DataType>
+      <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>4626</StateNumber>
     </column>
     <column id="16" parent="10" name="last_name">
       <Position>2</Position>
-      <DataType>varchar(50)|0</DataType>
+      <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>4626</StateNumber>
     </column>
     <column id="17" parent="10" name="sec_name">
       <Position>3</Position>
-      <DataType>varchar(20)|0</DataType>
+      <DataType>varchar(20)|0s</DataType>
       <StateNumber>4626</StateNumber>
     </column>
     <column id="18" parent="10" name="id_stud">
       <Position>4</Position>
-      <DataType>integer|0</DataType>
+      <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>4626</StateNumber>
     </column>
     <column id="19" parent="10" name="group_num">
       <Position>5</Position>
-      <DataType>integer|0</DataType>
+      <DataType>integer|0s</DataType>
       <StateNumber>4626</StateNumber>
     </column>
     <index id="20" parent="10" name="student_pkey">
@@ -95,8 +93,8 @@
     <key id="21" parent="10" name="student_pkey">
       <ObjectId>57579</ObjectId>
       <ColNames>id_stud</ColNames>
-      <UnderlyingIndexName>student_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
+      <UnderlyingIndexName>student_pkey</UnderlyingIndexName>
     </key>
     <foreign-key id="22" parent="10" name="r_1">
       <ObjectId>57580</ObjectId>

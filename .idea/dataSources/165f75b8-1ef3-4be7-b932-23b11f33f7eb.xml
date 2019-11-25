@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="PostgreSQL - postgres@localhost">
-  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.2">
+  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.16">
     <root id="1"/>
     <database id="2" parent="1" name="postgres">
       <ObjectId>11913</ObjectId>
       <Current>1</Current>
-      <Visible>1</Visible>
     </database>
     <schema id="3" parent="2" name="public">
       <ObjectId>2200</ObjectId>
       <IntrospectionTimestamp>2019-10-28.20:06:20.479</IntrospectionTimestamp>
       <Current>1</Current>
-      <Visible>1</Visible>
     </schema>
     <schema id="4" parent="2" name="pg_catalog">
       <ObjectId>11</ObjectId>
