@@ -1,8 +1,8 @@
 package main.com.mycompany.app.dao;
 
 
-import main.com.mycompany.app.dao.Interface.GroupDao;
-import main.com.mycompany.app.entity.*;
+import main.com.mycompany.app.dao.Interface.*;
+import main.com.mycompany.app.Entity.*;
 
 import javax.persistence.Entity;
 import javax.persistence.EntityManager;
@@ -33,7 +33,7 @@ public class GroupDaoImpl implements GroupDao {
 
         return result;
     }
-
+    
     @Override
     public GroupEntity save(GroupEntity groupEntity) {
         this.entityManager.persist(groupEntity);
@@ -50,9 +50,9 @@ public class GroupDaoImpl implements GroupDao {
 
     @Override
     public GroupEntity deleteById(Integer id) {
-        final GroupEntity artist = this.getById(id);
-        this.entityManager.remove(artist);
+        final GroupEntity group = this.getById(id);
+        this.entityManager.remove(group);
 
-        return artist;
+        return group;
     }
 }

@@ -1,6 +1,6 @@
 package main.com.mycompany.app.dao.Interface;
 
-import main.com.mycompany.app.entity.StudentEntity;
+import main.com.mycompany.app.Entity.StudentEntity;
 
 import java.util.List;
 
@@ -14,5 +14,7 @@ public interface StudentDao {
     StudentEntity update(StudentEntity studentEntity);
 
     StudentEntity deleteById(Integer id);
+
+    List<StudentEntity> getByGroup(Integer groupId);
 
 }

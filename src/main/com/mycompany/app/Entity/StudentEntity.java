@@ -1,4 +1,4 @@
-package main.com.mycompany.app.entity;
+package main.com.mycompany.app.Entity;
 import javax.persistence.*;
 import java.io.Serializable;
 
@@ -6,6 +6,7 @@ import java.io.Serializable;
  * Created by пользователь on 03.11.2019.
  */
 @Entity
+
 @Table(name = "student")
 public class StudentEntity implements Serializable {
     @Id
@@ -20,7 +21,7 @@ public class StudentEntity implements Serializable {
     private String secName;
     @ManyToOne
     @JoinColumn(name = "group_num")
-    private GroupEntity group;
+    private main.com.mycompany.app.Entity.GroupEntity group;
 
 
     public void setId(Integer id) {

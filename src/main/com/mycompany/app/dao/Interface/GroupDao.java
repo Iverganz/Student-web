@@ -1,6 +1,6 @@
 package main.com.mycompany.app.dao.Interface;
 
-import main.com.mycompany.app.entity.GroupEntity;
+import main.com.mycompany.app.Entity.GroupEntity;
 
 import java.util.List;
 

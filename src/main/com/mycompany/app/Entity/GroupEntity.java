@@ -1,4 +1,4 @@
-package main.com.mycompany.app.entity;
+package main.com.mycompany.app.Entity;
 import javax.persistence.*;
 import java.util.List;
 
@@ -6,6 +6,7 @@ import java.util.List;
  * Created by пользователь on 03.11.2019.
  */
 @Entity
+
 @Table(name = "_group")
 public class GroupEntity {
     @Id

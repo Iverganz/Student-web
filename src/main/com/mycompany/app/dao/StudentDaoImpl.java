@@ -2,7 +2,7 @@ package main.com.mycompany.app.dao;
 
 
 import main.com.mycompany.app.dao.Interface.StudentDao;
-import main.com.mycompany.app.entity.StudentEntity;
+import main.com.mycompany.app.Entity.StudentEntity;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -50,5 +50,12 @@ public class StudentDaoImpl implements StudentDao {
         this.entityManager.remove(student);
 
         return student;
+    }
+
+    @Override
+    public List<StudentEntity> getByGroup(Integer groupId) {
+        List<StudentEntity> result = this.entityManager.createQuery("SELECT s FROM student s WHERE s.group_num LIKE :group\"").setParameter("group", groupId).getResultList();
+
+        return result;
     }
 }
